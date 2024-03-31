@@ -6,4 +6,4 @@ author
 description: Toward beautiful and efficient documenation
 
 # build settings
-remote_theme: jekyll/NorhtendLab
+remote_theme: jekyll/minima
