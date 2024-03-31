@@ -1,0 +1,9 @@
+# Site settings
+title: Where actions and words meet
+author
+  name: Syed Haseeb Ahmed
+  email: syedkrow@gmail.com
+description: Toward beautiful and efficient documenation
+
+# build settings
+remote_theme: jekyll/NorhtendLab
