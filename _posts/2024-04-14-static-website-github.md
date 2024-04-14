@@ -1,4 +1,4 @@
-# How to setup a static website on GitHub
+# How to set up a static website on GitHub
 Setting up a static website in GitHub covers the following stages:
 1.	Setup basic website configuration	
 2.	Configure site-wide appearance using _Config.yml yaml file
