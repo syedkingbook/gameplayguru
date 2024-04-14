@@ -6,7 +6,7 @@ Setting up a static website in GitHub covers the following stages:
 4.	Create the first blog post using Markdown
 
 
-**Explained below are the stages in detail:**
+**Explained below are the stages in detail:** 
 
 **Setup basic website configuration**
 
