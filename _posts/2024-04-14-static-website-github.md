@@ -12,7 +12,7 @@ Setting up a static website in GitHub covers the following stages:
 **Setup basic website configuration**
 
 1.	Log in to GitHub. 
-![login](/_assets/login.png)
+![login](gameplayguru/assets/login.png)
  
 5.	Click + and select **New repository**. 
 ![New repository](assets/images/newrepository.png)
