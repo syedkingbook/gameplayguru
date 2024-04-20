@@ -19,7 +19,7 @@ Setting up a static website in GitHub covers the following stages:
 
  
 6.	In the New repository page, enter the name of the new repository. 
-![Repository name](./assets/images/repositoryname.png)
+![Repository name](/gameplayguru/assets/images/repositoryname.png)
  
 7.	If you want to make the new static website visible to all, select the Public radio button. 
 8.	Scroll down the page and select the Add a README file check box. 
