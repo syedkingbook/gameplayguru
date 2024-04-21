@@ -21,7 +21,9 @@ While the first seven-and-a-half years dealt with helping the B2B technology dec
 
 
 ## Documentation, My Perspective
->What a find! What a place to be in! What fun!   
+>What a find! What a place to be in! What fun!
+
+
 I stand amazed at the very idea of documentation. 
 While technical writing is fulfilling for me as a writer, technical documentation takes fun to a whole new level. In ways, technical documentation for me completes the meaning of life. No less!
 Why? Documentation centers on capturing the action, capturing the truth. It is about communicating the truth to the readers to help them take better decisions. Summarily, it is about a record of truth that enables readers to act wisely and make their own life better.
@@ -30,7 +32,7 @@ Why? Documentation centers on capturing the action, capturing the truth. It is a
 Below is my observation about planning and execution when it comes to writing and documentation.  
 
 
-| Topic      | Technical writing | Technical Documentation |
+| Topic | Technical writing | Technical Documentation |
 | ----------- | ----------- |--------------------|
 | Defining target audience | learning about who the decision maker is and their day looks like at work   | learning about the unique user persona, role in the organization and their task |
 | Understanding the unique needs of the target audience      | understanding their business problems and what keeps them awake at night   | Technical documentation -- understanding their job responsibilities of a job role and what tasks they execute and what are their key concerns in executing their tasks  |
