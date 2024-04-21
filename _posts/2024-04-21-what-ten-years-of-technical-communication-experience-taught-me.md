@@ -14,7 +14,7 @@ Seven-and-a half years on, I loved, lived, and cherished the job of a technical 
 During this job, I developed stories with a natural narrative arc. A story would begin with a strong moot point and would steer the reader toward connected arguments illuminating on the various aspects of the business and how the technology in question would fill the gaps. The story not only helped the reader appreciate a technology solution but also understand how it would meet their business needs. 
 
 
-## Crossing the fence 
+## Embracing the Other Side of the Fence 
 
 Fast forward to today and I am a documentarian. As a technical documentation specialist, I continue to write about cloud-native and on premise technology solutions enabled with features such as data visualization, knowledge graph, machine learning, IoT, and web technologies--albeit with a different perspective. 
 While the first seven-and-a-half years dealt with helping the B2B technology decision makers make the right choice, the last two-and-a-half years has been about documenting the working of those technologies as part of user help. 
