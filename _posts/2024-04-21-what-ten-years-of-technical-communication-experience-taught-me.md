@@ -33,16 +33,16 @@ Below is my observation about planning and execution when it comes to writing an
 
 
 | Topic | Technical writing | Technical Documentation |
-| ----------- | ----------- |--------------------|
-| Defining target audience | learning about who the decision maker is and their day looks like at work   | learning about the unique user persona, role in the organization and their task |
-| Understanding the unique needs of the target audience      | understanding their business problems and what keeps them awake at night   | Technical documentation -- understanding their job responsibilities of a job role and what tasks they execute and what are their key concerns in executing their tasks  |
-| Learning about the gaps the product fills      | knowing how the product is projected in the market   | Working with the marketing team and attending leadership meetings to understand what problems they are trying to address for the customers |
-| Planning content structure      | Cutting one big idea into smaller chunks and arranging them in a cohesive manner   | User task workflow |
-| Transforming complex technologies into simple coherent ideas      | Hiding the complexity of the technology while surfacing the value it delivers that allow readers to solve their problems | Working with Technical Product Owners to understand the problems solved for the end user, what the feature is, why it is important, at what phase of the work it is applicable, and how it works |
-| Surfacing the moot point      | Highlighting the unique pain point of the reader and the details around it   | Understanding the scope of documentation, defining the table of contents for a feature, going from high level benefits to the instruction level walkthrough |
-| Making the promise      | Making the big promise and diving deep into the intricate details of it by providing evidence of how the promise would be fulfilled   | defining the table of contents for a feature, going from high level benefits to the instruction level walkthrough |
-| Narrative arc      | Making sure the big ideas are divided smaller chunks and arranged into logical sequence   | Tracking the sequence of end user actions, the user persona involved, and actions to be performed |
-| Fulfilling the promise    | Circling to complete the story and showing how the value looks like | Showing the screenshots of how the user will see the UI |
-| Case study      | Before and after effect   | Demo using dummy data and providing screenshots |
-| Conclusion      | Reiterating the moot point and ending with a futuristic roadmap   | Note/Warning/Attention/Appendix |
+| ----------- | ----------- | -------------------|
+| **Defining target audience** | Learning about who the decision maker is and how her day looks like at work | Learning about the unique user persona and her role in the organization |
+| **Understanding the unique needs of the target audience** | Understanding her business problems and what keeps her awake at night   | Understanding her job responsibilities role and what tasks she executes and what her key concerns are in executing tasks  |
+| **Learning about the gaps the product fills** | knowing how the product is projected in the market   | Working with the marketing team and attending leadership meetings to understand what problems they are trying to address for the customers |
+| **Planning content structure** | Cutting one big idea into smaller chunks and arranging them in a cohesive manner | User task workflow |
+| **Transforming complex technologies into simple coherent ideas** | Hiding the complexity of the technology while surfacing the value it delivers that allow readers to solve their problems | Working with Technical Product Owners to understand the problems solved for the end user, what the feature is, why it is important, at what phase of the work it is applicable, and how it works |
+| **Surfacing the moot point** | Highlighting the unique pain point of the reader and the details around it | Understanding the scope of documentation, defining the table of contents for a feature, going from high level benefits to the instruction level walkthrough |
+| **Making the promise** | Making the big promise and diving deep into the intricate details of it by providing evidence of how the promise would be fulfilled   | defining the table of contents for a feature, going from high level benefits to the instruction level walkthrough |
+| **Narrative arc** | Making sure the big ideas are divided smaller chunks and arranged into logical sequence   | Tracking the sequence of end user actions, the user persona involved, and actions to be performed |
+| **Fulfilling the promise** | Circling to complete the story and showing how the value looks like | Showing the screenshots of how the user will see the UI |
+| **Case study** | Before and after effect   | Demo using dummy data and providing screenshots |
+| **Conclusion** | Reiterating the moot point and ending with a futuristic roadmap   | Note/Warning/Attention/Appendix |
 
