@@ -2,9 +2,11 @@ It is January, 2014 and I am introduced to the world of technical writing. The t
 * Spurred by cloud, technologies such as big data, cloud, Internet of things (IoT), data analytics, Business Intelligence, and data visualization are in the boom. 
 * Blockchain and Machine Learning were gathering steam. 
 * Enterprise technologies transforming to meet robust, agile, and high performance computing needs of competitive businesses. 
-* Monolithic technology design does not cut it anymore. 
-Companies across the energy, banking and insurance, legal, media, and logistics, defense, and more are investing in such advanced technologies and they want to be heard. As a technical writer, I am tasked to be their voice. The mission: helping the B2B technology decision makers, my target audience, make the right technology choice to solve their business problems. 
-Seven-and-a half years on, I loved, lived, and cherished the job of a technical writer. 
+* Monolithic technology design does not cut it anymore.
+
+  
+Companies across the energy, banking and insurance, legal, media, and logistics, defense, and more are investing in such advanced technologies and they want to be heard. As a technical writer, I am tasked to be their voice. The mission: helping the B2B technology decision makers, my target audience, make the right technology choice to solve their business problems.   
+Seven-and-a half years on, I loved, lived, and cherished the job of a technical writer.   
 During this job, I developed stories with a natural narrative arc. A story would begin with a strong moot point and would steer the reader toward connected arguments illuminating on the various aspects of the business and how the technology in question would fill the gaps. The story not only helped the reader appreciate a technology solution but also understand how it would meet their business needs. 
 Crossing the fence 
 Fast forward to today and I am a documentarian. As a technical documentation specialist, I continue to write about cloud-native and on premise technology solutions enabled with features such as data visualization, knowledge graph, machine learning, IoT, and web technologies--albeit with a different perspective. 
