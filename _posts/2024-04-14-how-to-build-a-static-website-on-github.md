@@ -80,9 +80,9 @@ The details appear.
  
 5.	Click **Commit changes**. 
 6.	In the Commit changes window that appears, enter the following details:
-a.	Commit message
-b.	Extended description
-c.	Commit directly to the main branch
+    a.	Commit message
+    b.	Extended description
+    c.	Commit directly to the main branch
 7.	Click **Commit changes**. The details appear as below. 
 ![Repository name](https://syedkingbook.github.io/gameplayguru/assets/repositoryname.png)
  
