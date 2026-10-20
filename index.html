@@ -11,27 +11,26 @@
 <body>
 
   <div class="site-container">
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">Syed Haseeb Ahmed</a></h1>
+    <header class="site-header">
+      <h1 class="main-title">Syed Haseeb Ahmed</h1>
       <p class="site-subtitle">Technical Writer &bull; API Documentation Specialist &bull; Documentation Engineer &bull; Programmer Writer</p>
 
       <!-- Navigation Tabs -->
       <nav class="site-tabs">
         <a href="{{ '/' | relative_url }}" class="tab-item active">Home</a>
-        <a href="{{ '/about/' | relative_url }}" class="tab-item">Python</a>
-        <a href="{{ '/projects/' | relative_url }}" class="tab-item">Technical Writing</a>
-        <a href="{{ '/writing/' | relative_url }}" class="tab-item">API Documentation</a>
-		<a href="{{ '/writing/' | relative_url }}" class="tab-item">Fun Writing</a>
+        <a href="{{ '/about/' | relative_url }}" class="tab-item">About</a>
+        <a href="{{ '/projects/' | relative_url }}" class="tab-item">Projects</a>
+        <a href="{{ '/writing/' | relative_url }}" class="tab-item">Writing</a>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="intro-section">
         <h2>Twelve years of technical communication, now writing Python too.</h2>
         <pre aria-label="A Python function named explain that returns clear docs and working code"><code>def explain(complex_thing):
     """Turn it into something people can use."""
     return clear_docs, working_code</code></pre>
-        <p>I'm Syed Haseeb Ahmed. I write documentation, build small Python projects and explain how both are made.</p>
+        <p class="bio-text">I write documentation, build small Python projects and explain how both are made.</p>
       </section>
     </main>
   </div>
