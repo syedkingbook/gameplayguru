@@ -145,3 +145,8 @@ pre code, pre span {
   color: var(--accent-yellow) !important;
   margin: 0;
 }
+
+/* Hide Jekyll theme's default top-left title */
+.markdown-body > h1:first-child {
+  display: none !important;
+}
