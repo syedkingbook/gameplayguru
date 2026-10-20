@@ -1,22 +1,24 @@
-/* --- Signature Mailchimp Yellow Theme --- */
+/* --- Soft Editorial / Mellowed Warm Theme --- */
 :root {
-  --bg-color: #ffe01b;            /* Official Mailchimp Yellow background */
-  --text-color: #241c15;          /* Deep dark charcoal black text */
-  --card-bg: #241c15;             /* Dark charcoal container for code blocks */
-  --code-text: #ffe01b;           /* Bright yellow code text */
-  --border-color: #241c15;        /* Crisp dark borders */
-  --tab-hover: rgba(36, 28, 21, 0.1); /* Subtle hover overlay */
+  --bg-color: #F7F5F0;            /* Soft warm cream / oatmeal (easy on the eyes) */
+  --text-color: #2D2A26;          /* Deep rich charcoal text */
+  --accent-color: #F2D06B;        /* Mellow, muted mustard yellow */
+  --card-bg: #2D2A26;             /* Dark charcoal container for code blocks */
+  --code-text: #F7F5F0;           /* Soft cream code text */
+  --border-color: #D8D2C4;        /* Subtle warm gray-tan border */
+  --tab-hover: rgba(45, 42, 38, 0.06); 
 }
 
-/* Force yellow theme in all modes */
+/* Maintain soft tones in dark mode preferences */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #ffe01b;
-    --text-color: #241c15;
-    --card-bg: #241c15;
-    --code-text: #ffe01b;
-    --border-color: #241c15;
-    --tab-hover: rgba(36, 28, 21, 0.1);
+    --bg-color: #1E1C1A;            /* Deep warm dark brown-charcoal */
+    --text-color: #E8E4DC;          /* Soft warm light gray text */
+    --accent-color: #D9B34A;        /* Mellow dark-mode mustard */
+    --card-bg: #2B2825;             
+    --code-text: #E8E4DC;           
+    --border-color: #3D3935;        
+    --tab-hover: rgba(232, 228, 220, 0.08);
   }
 }
 
@@ -43,7 +45,7 @@ body {
 
 h1, h2, h3 { 
   color: var(--text-color); 
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -54,33 +56,40 @@ h1 a {
 
 p, li {
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.05rem;
 }
 
 a { 
   color: var(--text-color); 
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline; 
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 3px;
+}
+
+a:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 /* --- Navigation Tabs --- */
 .site-tabs {
   display: flex;
   gap: 8px;
-  border-bottom: 3px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   margin: 25px 0 35px 0;
   padding-bottom: 0;
 }
 
 .tab-item {
-  padding: 8px 18px;
-  font-size: 1rem;
+  padding: 8px 16px;
+  font-size: 0.95rem;
   color: var(--text-color);
   text-decoration: none;
   border-radius: 6px 6px 0 0;
-  font-weight: 700;
+  font-weight: 600;
   transition: background-color 0.2s ease;
 }
 
@@ -90,8 +99,9 @@ a {
 }
 
 .tab-item.active {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -103,7 +113,7 @@ pre {
   padding: 18px 22px;
   overflow-x: auto;
   font-size: 0.95rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
 }
 
 pre code, pre span {
@@ -113,16 +123,17 @@ pre code, pre span {
 
 /* --- Footer --- */
 .site-footer {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  border-top: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   text-align: center;
   padding: 24px 20px;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.03em;
 }
 
 .site-footer p {
-  color: var(--bg-color) !important;
+  color: var(--text-color) !important;
   margin: 0;
 }
