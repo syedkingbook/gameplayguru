@@ -1,41 +1,41 @@
-/* --- Mailchimp Theme Colors --- */
+/* --- Signature Mailchimp Yellow Theme --- */
 :root {
-  --bg-color: #fffefb;            /* Warm off-white paper background */
-  --text-color: #241c15;          /* Deep charcoal black */
-  --accent-color: #ffe01b;        /* Iconic Mailchimp Yellow */
-  --accent-hover: #e5c814;        /* Slightly darker yellow for hover */
-  --link-color: #007c89;          /* Mailchimp dark teal or use deep black */
-  --border-color: #e6e3dc;        /* Soft warm border */
-  --muted-color: #59524c;         /* Subdued charcoal for descriptions */
+  --bg-color: #ffe01b;            /* Official Mailchimp Yellow background */
+  --text-color: #241c15;          /* Deep dark charcoal black text */
+  --card-bg: #241c15;             /* Dark charcoal container for code blocks */
+  --code-text: #ffe01b;           /* Bright yellow code text */
+  --border-color: #241c15;        /* Crisp dark borders */
+  --tab-hover: rgba(36, 28, 21, 0.1); /* Subtle hover overlay */
 }
 
+/* Force yellow theme in all modes */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #1a1a1a;            /* Rich dark charcoal */
-    --text-color: #f4f1ea;          /* Warm light cream text */
-    --accent-color: #ffe01b;        /* Vibrant Mailchimp Yellow */
-    --accent-hover: #ffea5c;        
-    --link-color: #54b5c1;          
-    --border-color: #333333;        
-    --muted-color: #b3aca5;         
+    --bg-color: #ffe01b;
+    --text-color: #241c15;
+    --card-bg: #241c15;
+    --code-text: #ffe01b;
+    --border-color: #241c15;
+    --tab-hover: rgba(36, 28, 21, 0.1);
   }
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .site-container {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
   flex: 1;
   width: 100%;
   box-sizing: border-box;
@@ -44,78 +44,85 @@ body {
 h1, h2, h3 { 
   color: var(--text-color); 
   font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 h1 a { 
   text-decoration: none; 
-  color: inherit; 
+  color: var(--text-color); 
+}
+
+p, li {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
 a { 
   color: var(--text-color); 
+  font-weight: 700;
   text-decoration: underline; 
-  text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 3px;
-}
-
-a:hover { 
-  color: var(--text-color);
-  background-color: var(--accent-color);
-  text-decoration: none;
+  text-decoration-thickness: 2px;
 }
 
 /* --- Navigation Tabs --- */
 .site-tabs {
   display: flex;
-  gap: 10px;
-  border-bottom: 2px solid var(--border-color);
-  margin: 20px 0 30px 0;
+  gap: 8px;
+  border-bottom: 3px solid var(--border-color);
+  margin: 25px 0 35px 0;
+  padding-bottom: 0;
 }
 
 .tab-item {
-  padding: 8px 16px;
-  font-size: 0.95rem;
-  color: var(--muted-color);
+  padding: 8px 18px;
+  font-size: 1rem;
+  color: var(--text-color);
   text-decoration: none;
-  border-bottom: 3px solid transparent;
-  margin-bottom: -2px;
-  font-weight: 600;
+  border-radius: 6px 6px 0 0;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
 }
 
 .tab-item:hover {
-  color: var(--text-color);
-  background-color: var(--accent-color);
+  background-color: var(--tab-hover);
   text-decoration: none;
 }
 
 .tab-item.active {
-  color: var(--text-color);
-  background-color: var(--accent-color);
-  border-bottom-color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-decoration: none;
 }
 
-/* --- Code Blocks --- */
+/* --- Python Code Blocks --- */
 pre {
-  background: var(--text-color);
-  color: var(--accent-color);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 16px;
+  background-color: var(--card-bg) !important;
+  color: var(--code-text) !important;
+  border-radius: 8px;
+  padding: 18px 22px;
   overflow-x: auto;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-pre code {
-  font-family: monospace;
+pre code, pre span {
+  color: var(--code-text) !important;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 /* --- Footer --- */
 .site-footer {
   background-color: var(--text-color);
-  color: var(--accent-color);
+  color: var(--bg-color);
   text-align: center;
-  padding: 24px;
-  font-size: 1rem;
+  padding: 24px 20px;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  border-top: 4px solid var(--accent-color);
+  letter-spacing: 0.03em;
+}
+
+.site-footer p {
+  color: var(--bg-color) !important;
+  margin: 0;
 }
