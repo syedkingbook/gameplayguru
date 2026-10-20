@@ -1,0 +1,88 @@
+/* --- Base Styles --- */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --link-color: #0366d6;
+  --border-color: #eaeaea;
+  --muted-color: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0d1117;
+    --text-color: #c9d1d9;
+    --link-color: #58a6ff;
+    --border-color: #30363d;
+    --muted-color: #8b949e;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 { color: var(--text-color); }
+h1 a { text-decoration: none; color: inherit; }
+a { color: var(--link-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Navigation Tabs --- */
+.site-tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid var(--border-color);
+  margin: 20px 0 30px 0;
+}
+
+.tab-item {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  color: var(--muted-color);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab-item:hover {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.tab-item.active {
+  color: var(--text-color);
+  border-bottom-color: var(--link-color);
+  font-weight: 600;
+}
+
+/* --- Code Blocks --- */
+pre {
+  background: rgba(127, 127, 127, 0.08);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+/* --- Footer --- */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 20px;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}

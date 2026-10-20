@@ -1,5 +1,4 @@
----
-layout: default
+<!--layout: default
 ---
 <section class="wrap hero">
   <h1>Twelve years of technical communication, now writing Python too.</h1>
@@ -26,4 +25,47 @@ layout: default
     {% endfor %}
   </ul>
   <footer>Where words and actions meet -- breaking boundaries, building bridges, and crossing the oceans of irrelevance. </footer>
-</section>
+</section>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Haseeb Ahmed</title>
+    <!-- Link your stylesheet -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+    <!-- Main Content Container -->
+    <div class="site-container">
+        
+        <!-- Header Section -->
+        <header>
+            <h1><a href="{{ '/' | relative_url }}">Syed Haseeb Ahmed</a></h1>
+			<nav style="margin-bottom: 30px; font-size: 0.95rem;">
+    <a href="{{ '/' | relative_url }}" style="margin-right: 15px;">Home</a>
+    <a href="https://github.com/syedkingbook" target="_blank" style="margin-right: 15px;">GitHub</a>
+    <a href="https://linkedin.com/in/syed-haseeb-ahmed-profile" target="_blank">LinkedIn</a>
+	<!-- Navigation Tabs -->
+  <nav class="site-tabs">
+    <a href="{{ '/' | relative_url }}" class="tab-item active">Python</a>
+    <a href="{{ '/about/' | relative_url }}" class="tab-item">Technical Writing</a>
+    <a href="{{ '/projects/' | relative_url }}" class="tab-item">Doc Samples</a>
+    <a href="{{ '/writing/' | relative_url }}" class="tab-item">Writing</a>
+</nav>
+        </header>
+
+        <!-- Page Content (Your Bio, Code Block, Posts) -->
+        {{ content }}
+        
+    </div>
+
+    <!-- Custom Footer -->
+    <footer class="site-footer">
+        <p>Where words meet actions -- breaking boundaries, building bridges, and crossing the oceans of irrelevance.</p>
+    </footer>
+
+</body>
+</html>
