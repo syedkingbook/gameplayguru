@@ -1,71 +1,41 @@
-<!--layout: default
----
-<section class="wrap hero">
-  <h1>Twelve years of technical communication, now writing Python too.</h1>
-  <pre class="code" aria-label="A Python function named explain that returns clear docs and working code"><code><span class="k">def</span> <span class="f">explain</span>(complex_thing):
-    <span class="s">"""Turn it into something people can use."""</span>
-    <span class="k">return</span> clear_docs, working_code</code></pre>
-  <p class="lede">I'm {{ site.author }}. I write documentation, build small Python projects and explain how both are made.</p>
-</section>
-
-<section class="wrap sections" aria-label="Sections">
-  {% for s in site.data.sections %}
-  <a class="row" href="{{ s.url | relative_url }}">
-    <h2>{{ s.title }}</h2>
-    <p>{{ s.blurb }}</p>
-  </a>
-  {% endfor %}
-</section>
-
-<section class="wrap latest">
-  <h2 class="small">Latest writing</h2>
-  <ul class="list compact">
-    {% for p in site.posts limit:3 %}
-    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %-d, %Y" }}</time></li>
-    {% endfor %}
-  </ul>
-  <footer>Where words and actions meet -- breaking boundaries, building bridges, and crossing the oceans of irrelevance. </footer>
-</section>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Haseeb Ahmed</title>
-    <!-- Link your stylesheet -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Haseeb Ahmed - GameplayGuru</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
-    <!-- Main Content Container -->
-    <div class="site-container">
-        
-        <!-- Header Section -->
-        <header>
-            <h1><a href="{{ '/' | relative_url }}">Syed Haseeb Ahmed</a></h1>
-			<nav style="margin-bottom: 30px; font-size: 0.95rem;">
-    <a href="{{ '/' | relative_url }}" style="margin-right: 15px;">Home</a>
-    <a href="https://github.com/syedkingbook" target="_blank" style="margin-right: 15px;">GitHub</a>
-    <a href="https://linkedin.com/in/syed-haseeb-ahmed-profile" target="_blank">LinkedIn</a>
-	<!-- Navigation Tabs -->
-  <nav class="site-tabs">
-    <a href="{{ '/' | relative_url }}" class="tab-item active">Python</a>
-    <a href="{{ '/about/' | relative_url }}" class="tab-item">Technical Writing</a>
-    <a href="{{ '/projects/' | relative_url }}" class="tab-item">Doc Samples</a>
-    <a href="{{ '/writing/' | relative_url }}" class="tab-item">Writing</a>
-</nav>
-        </header>
+  <div class="site-container">
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">Syed Haseeb Ahmed</a></h1>
 
-        <!-- Page Content (Your Bio, Code Block, Posts) -->
-        {{ content }}
-        
-    </div>
+      <!-- Navigation Tabs -->
+      <nav class="site-tabs">
+        <a href="{{ '/' | relative_url }}" class="tab-item active">Home</a>
+        <a href="{{ '/about/' | relative_url }}" class="tab-item">About</a>
+        <a href="{{ '/projects/' | relative_url }}" class="tab-item">Projects</a>
+        <a href="{{ '/writing/' | relative_url }}" class="tab-item">Writing</a>
+      </nav>
+    </header>
 
-    <!-- Custom Footer -->
-    <footer class="site-footer">
-        <p>Where words meet actions -- breaking boundaries, building bridges, and crossing the oceans of irrelevance.</p>
-    </footer>
+    <main>
+      <section>
+        <h2>Twelve years of technical communication, now writing Python too.</h2>
+        <pre aria-label="A Python function named explain that returns clear docs and working code"><code>def explain(complex_thing):
+    """Turn it into something people can use."""
+    return clear_docs, working_code</code></pre>
+        <p>I'm Syed Haseeb Ahmed. I write documentation, build small Python projects and explain how both are made.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Custom Footer -->
+  <footer class="site-footer">
+    <p>Where words meet actions -- breaking boundaries, building bridges, and crossing the oceans of irrelevance.</p>
+  </footer>
 
 </body>
 </html>
