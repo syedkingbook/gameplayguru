@@ -1,25 +1,13 @@
-/* --- Soft Editorial / Mellowed Warm Theme --- */
+/* --- Ultra-Dull, Glare-Free Matte Theme --- */
 :root {
-  --bg-color: #F7F5F0;            /* Soft warm cream / oatmeal (easy on the eyes) */
-  --text-color: #2D2A26;          /* Deep rich charcoal text */
-  --accent-color: #F2D06B;        /* Mellow, muted mustard yellow */
-  --card-bg: #2D2A26;             /* Dark charcoal container for code blocks */
-  --code-text: #F7F5F0;           /* Soft cream code text */
-  --border-color: #D8D2C4;        /* Subtle warm gray-tan border */
-  --tab-hover: rgba(45, 42, 38, 0.06); 
-}
-
-/* Maintain soft tones in dark mode preferences */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #1E1C1A;            /* Deep warm dark brown-charcoal */
-    --text-color: #E8E4DC;          /* Soft warm light gray text */
-    --accent-color: #D9B34A;        /* Mellow dark-mode mustard */
-    --card-bg: #2B2825;             
-    --code-text: #E8E4DC;           
-    --border-color: #3D3935;        
-    --tab-hover: rgba(232, 228, 220, 0.08);
-  }
+  --bg-color: #1a1c1e;            /* Soft matte dark slate (zero glare) */
+  --text-color: #9da5b4;          /* Muted grayish-blue text (easy to read) */
+  --heading-color: #c0cbdc;       /* Slightly lighter soft tone for headers */
+  --accent-color: #c6b088;        /* Very dull, desaturated muted sand accent */
+  --card-bg: #141618;             /* Darker matte container for code blocks */
+  --code-text: #abb2bf;           /* Soft neutral code text */
+  --border-color: #282c34;        /* Barely-visible dark borders */
+  --tab-hover: rgba(255, 255, 255, 0.03); 
 }
 
 body {
@@ -44,14 +32,14 @@ body {
 }
 
 h1, h2, h3 { 
-  color: var(--text-color); 
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  color: var(--heading-color); 
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 a { 
   text-decoration: none; 
-  color: var(--text-color); 
+  color: var(--heading-color); 
 }
 
 p, li {
@@ -61,16 +49,16 @@ p, li {
 }
 
 a { 
-  color: var(--text-color); 
-  font-weight: 600;
+  color: var(--heading-color); 
+  font-weight: 500;
   text-decoration: underline; 
   text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 
 a:hover {
   background-color: var(--accent-color);
-  color: var(--text-color);
+  color: var(--bg-color);
   text-decoration: none;
 }
 
@@ -78,7 +66,7 @@ a:hover {
 .site-tabs {
   display: flex;
   gap: 8px;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   margin: 25px 0 35px 0;
   padding-bottom: 0;
 }
@@ -88,20 +76,21 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-color);
   text-decoration: none;
-  border-radius: 6px 6px 0 0;
-  font-weight: 600;
+  border-radius: 4px 4px 0 0;
+  font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 .tab-item:hover {
   background-color: var(--tab-hover);
+  color: var(--heading-color);
   text-decoration: none;
 }
 
 .tab-item.active {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  font-weight: 700;
+  background-color: var(--border-color);
+  color: var(--heading-color);
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -109,7 +98,7 @@ a:hover {
 pre {
   background-color: var(--card-bg) !important;
   color: var(--code-text) !important;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 18px 22px;
   overflow-x: auto;
   font-size: 0.95rem;
@@ -123,14 +112,14 @@ pre code, pre span {
 
 /* --- Footer --- */
 .site-footer {
-  border-top: 2px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   background-color: var(--bg-color);
   color: var(--text-color);
   text-align: center;
   padding: 24px 20px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .site-footer p {
