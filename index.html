@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="wrap hero">
+  <h1>Ten years of technical communication, now writing Python too.</h1>
+  <pre class="code" aria-label="A Python function named explain that returns clear docs and working code"><code><span class="k">def</span> <span class="f">explain</span>(complex_thing):
+    <span class="s">"""Turn it into something people can use."""</span>
+    <span class="k">return</span> clear_docs, working_code</code></pre>
+  <p class="lede">I'm {{ site.author }}. I write documentation, build small Python projects and explain how both are made.</p>
+</section>
+
+<section class="wrap sections" aria-label="Sections">
+  {% for s in site.data.sections %}
+  <a class="row" href="{{ s.url | relative_url }}">
+    <h2>{{ s.title }}</h2>
+    <p>{{ s.blurb }}</p>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="wrap latest">
+  <h2 class="small">Latest writing</h2>
+  <ul class="list compact">
+    {% for p in site.posts limit:3 %}
+    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %-d, %Y" }}</time></li>
+    {% endfor %}
+  </ul>
+</section>

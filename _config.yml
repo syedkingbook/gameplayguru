@@ -1,0 +1,33 @@
+title: Syed Haseeb Ahmed
+tagline: Technical writer and Python programmer
+description: Documentation samples, Python projects and writing by Syed Haseeb Ahmed.
+author: Syed Haseeb Ahmed
+email: syedkrow@gmail.com
+url: https://wordsmeetactions.com
+baseurl: /gameplayguru      # change to "" if you rename the repo to syedkingbook.github.io
+github_username: syedkingbook
+linkedin_url: "https://www.linkedin.com/in/syed-haseeb-ahmed-profile/"            # paste your LinkedIn URL here
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  python:
+    output: true
+    permalink: /python/:path/
+  docs_samples:
+    output: true
+    permalink: /docs-samples/:path/
+  misc:
+    output: true
+    permalink: /misc/:path/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "post" }
+
+sass:
+  style: compressed
+
+exclude: [Gemfile, Gemfile.lock, README.md, vendor, node_modules]
