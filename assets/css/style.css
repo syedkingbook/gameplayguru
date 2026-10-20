@@ -1,4 +1,4 @@
-/* --- All-Yellow Text Theme with Bottom-Pinned Footer --- */
+/* --- Left-Aligned Tabs with Full-Width Border --- */
 :root {
   --bg-color: #18191a;            /* Dark matte background */
   --accent-yellow: #e6c256;       /* Soft, eye-friendly mustard yellow */
@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-/* Container expands to push footer down */
 .site-container {
   max-width: 700px;
   margin: 0 auto;
@@ -54,18 +53,25 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* --- Centered Navigation Tabs --- */
+/* --- Full-Width Stretching Tab Bar with Left Alignment --- */
 .site-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Left-aligns the tabs */
   gap: 8px;
+  width: 100vw;                /* Stretches the border line across the entire screen width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-left: max(20px, calc((100vw - 700px) / 2)); /* Lines up nicely with content padding */
   border-bottom: 2px solid var(--accent-yellow);
-  margin-top: 10px;
-  padding-bottom: 0;
+  margin-top: 15px;
+  box-sizing: border-box;
 }
 
 .tab-item {
-  padding: 7px 18px;
+  padding: 8px 18px;
   font-size: 0.9rem;
   color: var(--accent-yellow) !important;
   text-decoration: none;
@@ -87,7 +93,7 @@ body {
 
 /* Content Area Spacing */
 .intro-section {
-  margin-top: 18px;
+  margin-top: 24px;
 }
 
 h2 {
@@ -127,7 +133,7 @@ pre code, pre span {
   font-family: SFMono-Regular, Consolas, monospace;
 }
 
-/* --- Footer (Pinned to bottom) --- */
+/* --- Footer --- */
 .site-footer {
   flex-shrink: 0;
   border-top: 1px solid var(--border-color);
@@ -146,7 +152,7 @@ pre code, pre span {
   margin: 0;
 }
 
-/* Hide Jekyll theme's default top-left title */
+/* Hide Jekyll theme's default top-left title if it ever leaks */
 .markdown-body > h1:first-child {
   display: none !important;
 }
