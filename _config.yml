@@ -1,10 +1,10 @@
 title: Syed Haseeb Ahmed
-tagline: Technical writer and Python programmer
-description: Documentation samples, Python projects and writing by Syed Haseeb Ahmed.
+tagline: Technical writer and developer
+description: Documentation specialist with expertise in API documentation, user documentation, docs engineering, and Python.
 author: Syed Haseeb Ahmed
 email: syedkrow@gmail.com
-url: https://wordsmeetactions.com
-baseurl: /gameplayguru      # change to "" if you rename the repo to syedkingbook.github.io
+url: "https://syedkingbook.github.io"
+baseurl: ""
 github_username: syedkingbook
 linkedin_url: "https://www.linkedin.com/in/syed-haseeb-ahmed-profile/"            # paste your LinkedIn URL here
 
