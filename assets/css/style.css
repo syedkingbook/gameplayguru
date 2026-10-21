@@ -197,3 +197,61 @@ pre code, pre span {
 .markdown-body > h1:first-child {
   display: none !important;
 }
+
+/* --- Item List Styles for Tab Pages --- */
+.section-block {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-dark) !important;
+  border-bottom: 2px solid var(--text-dark);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-item {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.content-item:last-child {
+  border-bottom: none;
+}
+
+.item-link {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark) !important;
+  text-decoration: underline;
+  margin-right: 8px;
+}
+
+.item-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: var(--yellow-bg);
+  color: var(--text-dark);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+.item-desc {
+  font-size: 0.98rem;
+  color: var(--text-dark) !important;
+  margin: 6px 0 0 0;
+  line-height: 1.45;
+}
