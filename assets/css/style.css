@@ -1,9 +1,10 @@
-/* --- Left-Aligned Tabs with Full-Width Border --- */
+/* --- Centered Yellow Hero + Light Cream Body Theme --- */
 :root {
-  --bg-color: #18191a;            /* Dark matte background */
-  --accent-yellow: #e6c256;       /* Soft, eye-friendly mustard yellow */
-  --card-bg: #111213;             /* Code block background */
-  --border-color: #2f3336;        /* Subtle divider border */
+  --yellow-bg: #ffe01b;           /* Official Mailchimp Yellow */
+  --cream-bg: #f8f6f0;            /* Soft light cream body background */
+  --text-dark: #241c15;           /* Rich charcoal/black text */
+  --card-dark: #241c15;           /* Code block dark charcoal */
+  --border-color: #e2ded4;        /* Soft subtle border */
 }
 
 html, body {
@@ -13,8 +14,8 @@ html, body {
 }
 
 body {
-  background-color: var(--bg-color) !important;
-  color: var(--accent-yellow) !important;
+  background-color: var(--cream-bg) !important;
+  color: var(--text-dark) !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   display: flex;
@@ -22,137 +23,142 @@ body {
   min-height: 100vh;
 }
 
+/* --- Top Hero Banner Section (Centered) --- */
+.hero-header {
+  background-color: var(--yellow-bg);
+  padding: 35px 20px 25px 20px;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-dark) !important;
+  letter-spacing: -0.01em;
+}
+
+.site-subtitle {
+  color: var(--text-dark) !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+}
+
+/* --- Full-Width Navigation Tabs (Left Aligned) --- */
+.site-tabs {
+  background-color: var(--yellow-bg);
+  border-bottom: 3px solid var(--text-dark);
+  padding: 0;
+}
+
+.tabs-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 0 20px;
+}
+
+.tab-item {
+  padding: 9px 18px;
+  font-size: 0.92rem;
+  color: var(--text-dark) !important;
+  text-decoration: none;
+  border-radius: 6px 6px 0 0;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.tab-item:hover {
+  background-color: rgba(36, 28, 21, 0.1);
+}
+
+.tab-item.active {
+  background-color: var(--text-dark);
+  color: var(--yellow-bg) !important;
+}
+
+/* --- Light Cream Main Container --- */
 .site-container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 28px 20px 15px 20px;
+  padding: 30px 20px 20px 20px;
   flex: 1 0 auto;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Center-aligned Title & Subtitle Header */
-.site-header {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.main-title {
-  margin: 0 0 6px 0;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: var(--accent-yellow) !important;
-  letter-spacing: -0.01em;
-}
-
-.site-subtitle {
-  color: var(--accent-yellow) !important;
-  font-size: 0.88rem;
-  font-weight: 500;
-  margin: 0 0 18px 0;
-  letter-spacing: 0.02em;
-}
-
-/* --- Full-Width Stretching Tab Bar with Left Alignment --- */
-.site-tabs {
-  display: flex;
-  justify-content: flex-start; /* Left-aligns the tabs */
-  gap: 8px;
-  width: 100vw;                /* Stretches the border line across the entire screen width */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding-left: max(20px, calc((100vw - 700px) / 2)); /* Lines up nicely with content padding */
-  border-bottom: 2px solid var(--accent-yellow);
-  margin-top: 15px;
-  box-sizing: border-box;
-}
-
-.tab-item {
-  padding: 8px 18px;
-  font-size: 0.9rem;
-  color: var(--accent-yellow) !important;
-  text-decoration: none;
-  border-radius: 4px 4px 0 0;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.tab-item:hover {
-  color: #18191a !important;
-  background-color: var(--accent-yellow);
-}
-
-.tab-item.active {
-  background-color: var(--accent-yellow);
-  color: #18191a !important;
-  font-weight: 700;
-}
-
-/* Content Area Spacing */
 .intro-section {
-  margin-top: 24px;
+  margin-top: 10px;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-top: 0;
-  margin-bottom: 14px;
-  color: var(--accent-yellow) !important;
-  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-dark) !important;
+  font-weight: 800;
   text-align: left;
 }
 
 p, li, .bio-text {
-  color: var(--accent-yellow) !important;
-  font-size: 1rem;
+  color: var(--text-dark) !important;
+  font-size: 1.05rem;
+  font-weight: 500;
   margin-top: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 a { 
-  color: var(--accent-yellow) !important; 
+  color: var(--text-dark) !important; 
+  font-weight: 700;
   text-decoration: underline; 
 }
 
-/* --- Code Blocks --- */
+/* --- Python Code Blocks --- */
 pre {
-  background-color: var(--card-bg) !important;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 12px 16px;
-  margin: 14px 0;
+  background-color: var(--card-dark) !important;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
   overflow-x: auto;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
 }
 
 pre code, pre span {
-  color: var(--accent-yellow) !important;
+  color: var(--yellow-bg) !important;
   font-family: SFMono-Regular, Consolas, monospace;
 }
 
-/* --- Footer --- */
+/* --- Footer (Pinned to bottom) --- */
 .site-footer {
   flex-shrink: 0;
-  border-top: 1px solid var(--border-color);
-  background-color: var(--card-bg);
-  color: var(--accent-yellow) !important;
+  background-color: var(--text-dark);
+  color: var(--yellow-bg) !important;
   text-align: center;
-  padding: 16px 20px;
-  font-size: 0.88rem;
-  font-weight: 600;
+  padding: 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
   width: 100%;
   box-sizing: border-box;
+  border-top: 4px solid var(--yellow-bg);
 }
 
 .site-footer p {
-  color: var(--accent-yellow) !important;
+  color: var(--yellow-bg) !important;
   margin: 0;
 }
 
-/* Hide Jekyll theme's default top-left title if it ever leaks */
+/* Hide Jekyll theme's default top-left title */
 .markdown-body > h1:first-child {
   display: none !important;
 }
