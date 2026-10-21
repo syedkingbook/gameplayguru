@@ -157,32 +157,40 @@ pre code, pre span {
 .site-footer p {
   color: var(--yellow-bg) !important;
   font-size: 0.85rem !important;
-  margin: 0 0 6px 0;
+  margin: 0;
   line-height: 1.4;
 }
 
-/* Footer Links Styling */
-.footer-links {
-  font-size: 0.82rem;
+/* --- External Links Section (On the light cream background below footer) --- */
+.external-footer-links {
+  flex-shrink: 0;
+  background-color: var(--light-cream);
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid var(--border-color);
 }
 
-.footer-links a {
-  color: var(--yellow-bg) !important;
+.external-footer-links a {
+  color: var(--text-dark) !important;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.footer-links a:hover {
-  opacity: 0.8;
+.external-footer-links a:hover {
+  opacity: 0.7;
 }
 
-.footer-links .separator {
-  color: var(--yellow-bg);
-  opacity: 0.6;
+.external-footer-links .separator {
+  color: var(--text-dark);
+  opacity: 0.5;
 }
 
 /* Hide Jekyll theme's default top-left title if present */
