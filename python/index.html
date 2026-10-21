@@ -1,136 +1,89 @@
 ---
+layout: default
+title: Python
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python - Syed Haseeb Ahmed</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
 
-  <!-- Top Hero Banner (Mailchimp Yellow) -->
-  <header class="hero-header">
-    <div class="header-inner">
-      <h1 class="main-title">Syed Haseeb Ahmed</h1>
-      <p class="site-subtitle">Technical Writer &bull; API Documentation Specialist &bull; Documentation Engineer &bull; Programmer Writer</p>
+<div class="page-layout">
+  
+  <!-- Main Left Content Area -->
+  <main class="main-content">
+    <section class="section-block">
+      <h2 class="section-title">Daily Exercises</h2>
+      <ul class="item-list">
+        <li class="content-item">
+          <a href="{{ '/python/list-comprehension' | relative_url }}" class="item-link">List Comprehension Speed Drills</a>
+          <span class="item-tag">Exercise</span>
+          <p class="item-desc">Practiced optimizing nested loops into clean, Pythonic list comprehensions, reducing execution time and improving code readability across multiple data sets.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title">Small Projects</h2>
+      <ul class="item-list">
+        <li class="content-item">
+          <a href="#" class="item-link">Automated Markdown File Formatter</a>
+          <span class="item-tag">Small Project</span>
+          <p class="item-desc">Built a CLI tool in Python to parse, standardize header levels, and clean trailing spaces across large technical documentation folders.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title">Big Projects (Multi-Week)</h2>
+      <ul class="item-list">
+        <li class="content-item">
+          <a href="#" class="item-link">API Specification Linter & Doc Generator</a>
+          <span class="item-tag">Big Project</span>
+          <p class="item-desc">A Python-powered engine analyzing OpenAPI schemas to catch missing endpoint descriptions, generate mock payloads, and render responsive HTML references.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Top Right Folder Tree Sidebar -->
+  <aside class="sidebar-tree">
+    <div class="tree-card">
+      <h3 class="tree-title">📁 Folders Archive</h3>
+      <ul class="tree-list">
+        <li class="tree-node">
+          <details open>
+            <summary class="tree-folder">📅 Daily</summary>
+            <ul class="tree-sublist">
+              <li><a href="#daily-2026">Today / Drills</a></li>
+              <li><a href="#daily-archive">Daily Logs</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="tree-node">
+          <details open>
+            <summary class="tree-folder">🗓️ Weekly</summary>
+            <ul class="tree-sublist">
+              <li><a href="#week-42">Week 42 Highlights</a></li>
+              <li><a href="#weekly-builds">Sprint Builds</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="tree-node">
+          <details>
+            <summary class="tree-folder">📆 Monthly</summary>
+            <ul class="tree-sublist">
+              <li><a href="#oct-2026">October 2026</a></li>
+              <li><a href="#sep-2026">September 2026</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="tree-node">
+          <details>
+            <summary class="tree-folder">📂 Yearly</summary>
+            <ul class="tree-sublist">
+              <li><a href="#year-2026">2026 Archive</a></li>
+              <li><a href="#year-2025">2025 Archive</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </div>
-  </header>
+  </aside>
 
-  <!-- Navigation Tabs -->
-  <nav class="site-tabs">
-    <div class="tabs-inner">
-      <a href="{{ '/' | relative_url }}" class="tab-item">Home</a>
-      <a href="{{ '/python/' | relative_url }}" class="tab-item active">Python</a>
-      <a href="{{ '/technical-writing/' | relative_url }}" class="tab-item">Technical Writing</a>
-      <a href="{{ '/api-documentation/' | relative_url }}" class="tab-item">API Documentation</a>
-      <a href="{{ '/stories/' | relative_url }}" class="tab-item">Stories</a>
-    </div>
-  </nav>
-
-  <!-- Main Body Content with Right Sidebar Layout -->
-  <div class="site-container">
-    <div class="page-layout">
-      
-      <!-- Main Left Content Area -->
-      <main class="main-content">
-        <section class="section-block">
-          <h2 class="section-title">Daily Exercises</h2>
-          <ul class="item-list">
-		  <!-- Update the href to point to your new markdown file name -->
-            <li class="content-item">
-              <a href="{{ '/python/list-comprehension' | relative_url }}" class="item-link">List Comprehension Speed Drills</a>
-              <span class="item-tag">Exercise</span>
-			  <!-- Keep your strict 20-word description here -->
-              <p class="item-desc">Practiced optimizing nested loops into clean, Pythonic list comprehensions, reducing execution time and improving code readability across multiple data sets.</p>
-            </li>
-			<li class="content-item">
-          </ul>
-        </section>
-
-        <section class="section-block">
-          <h2 class="section-title">Small Projects</h2>
-          <ul class="item-list">
-            <li class="content-item">
-              <a href="#" class="item-link">Automated Markdown File Formatter</a>
-              <span class="item-tag">Small Project</span>
-              <p class="item-desc">Built a CLI tool in Python to parse, standardize header levels, and clean trailing spaces across large technical documentation folders.</p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="section-block">
-          <h2 class="section-title">Big Projects (Multi-Week)</h2>
-          <ul class="item-list">
-            <li class="content-item">
-              <a href="#" class="item-link">API Specification Linter & Doc Generator</a>
-              <span class="item-tag">Big Project</span>
-              <p class="item-desc">A Python-powered engine analyzing OpenAPI schemas to catch missing endpoint descriptions, generate mock payloads, and render responsive HTML references.</p>
-            </li>
-          </ul>
-        </section>
-      </main>
-
-      <!-- Top Right Folder Tree Sidebar -->
-      <aside class="sidebar-tree">
-        <div class="tree-card">
-          <h3 class="tree-title">📁 Folders Archive</h3>
-          <ul class="tree-list">
-            <li class="tree-node">
-              <details open>
-                <summary class="tree-folder">📅 Daily</summary>
-                <ul class="tree-sublist">
-                  <li><a href="#daily-2026">Today / Drills</a></li>
-                  <li><a href="#daily-archive">Daily Logs</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="tree-node">
-              <details open>
-                <summary class="tree-folder">🗓️ Weekly</summary>
-                <ul class="tree-sublist">
-                  <li><a href="#week-42">Week 42 Highlights</a></li>
-                  <li><a href="#weekly-builds">Sprint Builds</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="tree-node">
-              <details>
-                <summary class="tree-folder">📆 Monthly</summary>
-                <ul class="tree-sublist">
-                  <li><a href="#oct-2026">October 2026</a></li>
-                  <li><a href="#sep-2026">September 2026</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="tree-node">
-              <details>
-                <summary class="tree-folder">📂 Yearly</summary>
-                <ul class="tree-sublist">
-                  <li><a href="#year-2026">2026 Archive</a></li>
-                  <li><a href="#year-2025">2025 Archive</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-    </div>
-  </div>
-
-  <!-- Custom Footer -->
-  <footer class="site-footer">
-    <p>Where words meet actions -- breaking boundaries, building bridges, and crossing the oceans of irrelevance.</p>
-  </footer>
-
-  <!-- Social Links Section -->
-  <div class="external-footer-links">
-    <a href="https://linkedin.com/in/syed-haseeb-ahmed-profile" target="_blank" rel="noopener">LinkedIn</a>
-    <span class="separator">&bull;</span>
-    <a href="mailto:syedkrow@gmail.com">Email</a>
-  </div>
-
-</body>
-</html>
+</div>
