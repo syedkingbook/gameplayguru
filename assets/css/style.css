@@ -146,12 +146,19 @@ pre code, pre span {
   background-color: var(--text-dark);
   color: var(--yellow-bg) !important;
   text-align: center;
-  padding: 20px;
-  font-size: 0.95rem;
-  font-weight: 700;
+  padding: 16px 20px;            /* Slightly trimmed padding for a sleek look */
+  font-size: 0.85rem;             /* Reduced font size (was 0.95rem) */
+  font-weight: 600;
   width: 100%;
   box-sizing: border-box;
   border-top: 4px solid var(--yellow-bg);
+}
+
+.site-footer p {
+  color: var(--yellow-bg) !important;
+  font-size: 0.85rem !important;  /* Ensures p tag inherits the reduced size */
+  margin: 0;
+  line-height: 1.4;
 }
 
 .site-footer p {
