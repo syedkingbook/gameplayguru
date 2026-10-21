@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - Syed Haseeb Ahmed</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Top Hero Banner (Mailchimp Yellow) -->
+  <header class="hero-header">
+    <div class="header-inner">
+      <h1 class="main-title">Syed Haseeb Ahmed</h1>
+      <p class="site-subtitle">Technical Writer &bull; API Documentation Specialist &bull; Documentation Engineer &bull; Programmer Writer</p>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="site-tabs">
+    <div class="tabs-inner">
+      <a href="{{ '/' | relative_url }}" class="tab-item">Home</a>
+      <a href="{{ '/python/' | relative_url }}" class="tab-item">Python</a>
+      <a href="{{ '/technical-writing/' | relative_url }}" class="tab-item">Technical Writing</a>
+      <a href="{{ '/api-documentation/' | relative_url }}" class="tab-item">API Documentation</a>
+      <a href="{{ '/stories/' | relative_url }}" class="tab-item">Stories</a>
+    </div>
+  </nav>
+
+  <!-- Main Body Content (Constrained Width with Side Padding) -->
+  <div class="site-container">
+    <main class="article-content">
+      {{ content }}
+    </main>
+  </div>
+
+  <!-- Custom Footer -->
+  <footer class="site-footer">
+    <p>Where words meet actions -- breaking boundaries, building bridges, and crossing the oceans of irrelevance.</p>
+  </footer>
+
+  <!-- Social Links Section -->
+  <div class="external-footer-links">
+    <a href="https://linkedin.com/in/syed-haseeb-ahmed-profile" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="separator">&bull;</span>
+    <a href="mailto:syedkrow@gmail.com">Email</a>
+  </div>
+
+</body>
+</html>

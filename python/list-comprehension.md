@@ -1,12 +1,9 @@
 ---
 layout: default
 title: "List Comprehension Speed Drills & Deep Dive"
-date: 2026-10-21
 ---
 
 # List Comprehension Speed Drills & Deep Dive
-
-<![endif]-->
 
 **Syed Haseeb Ahmed**
 

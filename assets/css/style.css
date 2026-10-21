@@ -344,3 +344,31 @@ pre code, pre span {
 .tree-sublist a:hover {
   text-decoration: underline;
 }
+
+/* --- Article Content Formatting --- */
+.article-content {
+  line-height: 1.6;
+}
+
+.article-content h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-dark) !important;
+}
+
+.article-content h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  color: var(--text-dark) !important;
+}
+
+.article-content p {
+  font-size: 1.05rem;
+  color: var(--text-dark) !important;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
