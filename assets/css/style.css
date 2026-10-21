@@ -1,8 +1,8 @@
-/* --- Centered Yellow Hero + Light Cream Body Theme --- */
+/* --- Centered Yellow Hero + Creamy White Body Theme --- */
 :root {
   --yellow-bg: #ffe01b;           /* Official Mailchimp Yellow */
-  --cream-bg: #f8f6f0;            /* Soft light cream body background */
-  --text-dark: #241c15;           /* Rich charcoal/black text */
+  --creamy-white: #fffdfa;        /* Soft creamy white background */
+  --text-dark: #241c15;           /* Rich charcoal black text */
   --card-dark: #241c15;           /* Code block dark charcoal */
   --border-color: #e2ded4;        /* Soft subtle border */
 }
@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  background-color: var(--cream-bg) !important;
+  background-color: var(--creamy-white) !important;
   color: var(--text-dark) !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -87,8 +87,9 @@ body {
   color: var(--yellow-bg) !important;
 }
 
-/* --- Light Cream Main Container --- */
+/* --- Creamy White Main Content Area --- */
 .site-container {
+  background-color: var(--creamy-white) !important;
   max-width: 700px;
   margin: 0 auto;
   padding: 30px 20px 20px 20px;
@@ -124,7 +125,7 @@ a {
   text-decoration: underline; 
 }
 
-/* --- Python Code Blocks --- */
+/* --- Python Code Block --- */
 pre {
   background-color: var(--card-dark) !important;
   border-radius: 8px;
@@ -158,7 +159,7 @@ pre code, pre span {
   margin: 0;
 }
 
-/* Hide Jekyll theme's default top-left title */
+/* Hide Jekyll theme's default top-left title if present */
 .markdown-body > h1:first-child {
   display: none !important;
 }
