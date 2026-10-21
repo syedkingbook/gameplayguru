@@ -146,8 +146,8 @@ pre code, pre span {
   background-color: var(--text-dark);
   color: var(--yellow-bg) !important;
   text-align: center;
-  padding: 16px 20px;            /* Slightly trimmed padding for a sleek look */
-  font-size: 0.85rem;             /* Reduced font size (was 0.95rem) */
+  padding: 16px 20px;
+  font-size: 0.85rem;
   font-weight: 600;
   width: 100%;
   box-sizing: border-box;
@@ -156,14 +156,33 @@ pre code, pre span {
 
 .site-footer p {
   color: var(--yellow-bg) !important;
-  font-size: 0.85rem !important;  /* Ensures p tag inherits the reduced size */
-  margin: 0;
+  font-size: 0.85rem !important;
+  margin: 0 0 6px 0;
   line-height: 1.4;
 }
 
-.site-footer p {
+/* Footer Links Styling */
+.footer-links {
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a {
   color: var(--yellow-bg) !important;
-  margin: 0;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-links .separator {
+  color: var(--yellow-bg);
+  opacity: 0.6;
 }
 
 /* Hide Jekyll theme's default top-left title if present */
