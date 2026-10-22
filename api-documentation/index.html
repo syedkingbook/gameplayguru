@@ -5,65 +5,40 @@ title: API Documentation
 
 <div class="page-layout">
   
-  <!-- Main Left Content Area -->
   <main class="main-content">
     <section class="section-block">
-      <h2 class="section-title">REST & GraphQL Specifications</h2>
+      <h2 class="section-title">OpenAPI Schemas & Specifications</h2>
       <ul class="item-list">
+        
         <li class="content-item">
-          <a href="#" class="item-link">OpenAPI 3.1 Migration Strategy & Best Practices</a>
-          <span class="item-tag">Specification</span>
-          <p class="item-desc">Transitioned legacy swagger definitions to modern OpenAPI 3.1 standards, incorporating precise data types, webhooks, and comprehensive error handling schemas.</p>
+          <a href="{{ '/assets/chainforge-api-reference-guide.pdf' | relative_url }}" target="_blank" rel="noopener" class=.pdf"item-link">
+            ChainForge API Reference Guide
+          </a>
+          <span class="item-tag">chainforge-api-reference-guide</span>
+          <p class="item-desc">The ChainForge API Reference Guide is a lookup document covering every REST endpoint across sixteen chapters. It explains authentication, scopes, pagination, idempotency, rate limits and finality, then documents accounts, transactions, gas, contracts, tokens, webhooks, usage and WebSocket subscriptions with parameters, examples and errors, plus schemas, error catalog and reference tables.</p>
         </li>
-      </ul>
-    </section>
+		<li class="content-item">
+          <a href="{{ '/assets/chainforge.yaml' | relative_url }}" target="_blank" rel="noopener" class=.pdf"item-link">
+            ChainForge YAML
+          </a>
+          <span class="item-tag">chainforge.yaml</span>
+          <p class="item-desc">The chainforge.yaml file is an OpenAPI 3.0.3 specification describing the same API as the reference guide. It defines thirty-two paths, bearer and OAuth2 security, reusable parameters, responses and schemas, an error code enumeration and a webhook callback. It passes Redocly validation with six warnings, ready for rendering, mocking or linting.</p>
+        </li>
 
-    <section class="section-block">
-      <h2 class="section-title">SDK & Integration References</h2>
-      <ul class="item-list">
-        <li class="content-item">
-          <a href="#" class="item-link">Building Developer-Friendly SDK Reference Guides</a>
-          <span class="item-tag">Reference</span>
-          <p class="item-desc">Structured code samples across Python, JavaScript, and cURL to ensure rapid prototyping and seamless developer adoption.</p>
-        </li>
       </ul>
     </section>
   </main>
 
-  <!-- Top Right Folder Tree Sidebar -->
+  <!-- Folder Tree Sidebar -->
   <aside class="sidebar-tree">
     <div class="tree-card">
       <h3 class="tree-title">📁 Folders Archive</h3>
       <ul class="tree-list">
         <li class="tree-node">
           <details open>
-            <summary class="tree-folder">📅 Daily</summary>
+            <summary class="tree-folder">⚙️ Schemas</summary>
             <ul class="tree-sublist">
-              <li><a href="#endpoint-logs">Endpoint Review Logs</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details open>
-            <summary class="tree-folder">🗓️ Weekly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#schema-sprints">Schema Refactors</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details>
-            <summary class="tree-folder">📆 Monthly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#oct-2026">October 2026</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details>
-            <summary class="tree-folder">📂 Yearly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#year-2026">2026 Archive</a></li>
+              <li><a href="{{ '/assets/schemas/payments-api.yaml' | relative_url }}" target="_blank">Payments API (YAML)</a></li>
             </ul>
           </details>
         </li>

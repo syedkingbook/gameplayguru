@@ -5,65 +5,42 @@ title: Technical Writing
 
 <div class="page-layout">
   
-  <!-- Main Left Content Area -->
   <main class="main-content">
     <section class="section-block">
-      <h2 class="section-title">Developer Guides</h2>
+      <h2 class="section-title">PDF Documentation & Guides</h2>
       <ul class="item-list">
+        
         <li class="content-item">
-          <a href="#" class="item-link">Getting Started with DITA XML Architecture</a>
-          <span class="item-tag">Guide</span>
-          <p class="item-desc">A comprehensive architectural guide explaining topic-based authoring, map reuse strategies, and conditional processing for enterprise software documentation.</p>
+          <a href="{{ '/assets/docs/chainforge-developer-guide.pdf' | relative_url }}" target="_blank" rel="noopener" class="item-link">
+            ChainForge Developer Guide (PDF)
+          </a>
+          <span class="item-tag">PDF</span>
+          <p class="item-desc">The ChainForge Developer Guide teaches developers to build on a EVM-compatible blockchain. Twelve chapters cover setup, core concepts, authentication, transactions, smart contracts, tokens, webhooks, SDKs and the CLI, plus three tutorials, troubleshooting and a production checklist. Appendices add a glossary, network parameters, changelog and links to the API Reference..</p>
         </li>
-      </ul>
-    </section>
 
-    <section class="section-block">
-      <h2 class="section-title">Whitepapers & Case Studies</h2>
-      <ul class="item-list">
-        <li class="content-item">
-          <a href="#" class="item-link">Reducing Support Tickets Through Better Onboarding Flows</a>
-          <span class="item-tag">Case Study</span>
-          <p class="item-desc">Analyzed developer feedback loops and restructured quickstart tutorials, achieving a measurable drop in customer support volume across product tiers.</p>
+        <!--<li class="content-item">
+          <a href="{{ '/assets/docs/user-onboarding-case-study.pdf' | relative_url }}" target="_blank" rel="noopener" class="item-link">
+            Developer Onboarding Case Study (PDF)
+          </a>
+          <span class="item-tag">PDF</span>
+          <p class="item-desc">A rigorous case study analyzing developer feedback loops and restructured quickstart tutorials, achieving a measurable drop in customer support volume across diverse product tiers. It outlines strategic content layout improvements, API code sample enhancements, and friction-point eliminations that drastically accelerated time-to-first-hello-world for incoming developer communities.</p>-->
         </li>
+
       </ul>
     </section>
   </main>
 
-  <!-- Top Right Folder Tree Sidebar -->
+  <!-- Folder Tree Sidebar -->
   <aside class="sidebar-tree">
     <div class="tree-card">
       <h3 class="tree-title">📁 Folders Archive</h3>
       <ul class="tree-list">
         <li class="tree-node">
           <details open>
-            <summary class="tree-folder">📅 Daily</summary>
+            <summary class="tree-folder">📂 Documents</summary>
             <ul class="tree-sublist">
-              <li><a href="#daily-notes">Editorial Logs</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details open>
-            <summary class="tree-folder">🗓️ Weekly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#doc-sprints">Documentation Sprints</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details>
-            <summary class="tree-folder">📆 Monthly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#oct-2026">October 2026</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="tree-node">
-          <details>
-            <summary class="tree-folder">📂 Yearly</summary>
-            <ul class="tree-sublist">
-              <li><a href="#year-2026">2026 Archive</a></li>
+              <li><a href="{{ '/assets/docs/sample-architecture-guide.pdf' | relative_url }}" target="_blank">DITA Guide (PDF)</a></li>
+              <li><a href="{{ '/assets/docs/user-onboarding-case-study.pdf' | relative_url }}" target="_blank">Case Study (PDF)</a></li>
             </ul>
           </details>
         </li>
